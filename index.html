@@ -4,6 +4,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body onload="ready()">
+<table width = 700px style = "border:0px">
+<td style = "border:0px">
+
 <h1>
     Main Projects
 </h1>
@@ -11,11 +14,14 @@
 </table>
 <br/><br/><br/>
 <h1>Small Projects & Demos</h1>
-<table id="sideProjs">
+<table id="sideProjs" width="650px">
   <td width="300px">
   </td>
   <td width="300px">
   </td>
+</table>
+
+</td>
 </table>
 
 <script>
@@ -73,7 +79,7 @@ BuddyUpJam Spring 2022| https://0-stamina.itch.io/untergetaucht\n\
 
     demo.innerHTML = "<a href=\""+info[1]+"\">"+info[0]+"</a>"
 
-    sideProjs.children[0].firstChild.children[d%2].appendChild(demo);
+    sideProjs.children[0].children[0].children[d%2].appendChild(demo);
   }
 
 }
