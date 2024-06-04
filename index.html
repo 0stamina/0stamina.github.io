@@ -7,12 +7,14 @@
 <h1>
     Main Projects
 </h1>
-<table id="mainProjs">
+<table id="mainProjs" width="650px">
 </table>
-<br/><br/><br/><br/>
-<h3>Side Projects & Demos</h3>
+<br/><br/><br/>
+<h1>Small Projects & Demos</h1>
 <table id="sideProjs">
-  <td>
+  <td width="300px">
+  </td>
+  <td width="300px">
   </td>
 </table>
 
@@ -71,7 +73,7 @@ BuddyUpJam Spring 2022| https://0-stamina.itch.io/untergetaucht\n\
 
     demo.innerHTML = "<a href=\""+info[1]+"\">"+info[0]+"</a>"
 
-    sideProjs.children[0].firstChild.firstChild.appendChild(demo);
+    sideProjs.children[0].firstChild.children[d%2].appendChild(demo);
   }
 
 }

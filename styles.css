@@ -1,14 +1,22 @@
 *{
     font-family: courier;
+    font-size:15pt;
     color:tomato;
     background-color:rgb(20, 20, 20);
 }
+
+body
+{
+    padding: 0px 0px 0px 100px;
+}
+
 html{ 
     background-color: rgb(20, 20, 20);;
 }
 
-h1,h2,h3,h4,h5,h6
+h1
 {
+    font-size:25pt;
     color:rgb(250, 129, 36);
 }
 
