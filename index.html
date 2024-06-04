@@ -20,14 +20,14 @@
 function ready() {
 
   var main_data = "\
-Arsenal, Dec 2023, STEAM: https://store.steampowered.com/app/2697380/Arsenal/, ITCH.IO: https://0-stamina.itch.io/arsenal\n\
+Arsenal, Dec 2023, STEAM| https://store.steampowered.com/app/2697380/Arsenal/, ITCH.IO| https://0-stamina.itch.io/arsenal\n\
 Burning Soul, TBD, \n\
 "
   var side_data = "\
-Mesh Collision: https://0-stamina.itch.io/collision-test\n\
-Terrain Generation: https://0-stamina.itch.io/terrain\n\
-Phantom Cafe: https://0-stamina.itch.io/phantom-cafe\n\
-BuddyUpJam Spring 2022: https://0-stamina.itch.io/untergetaucht\n\
+Mesh Collision| https://0-stamina.itch.io/collision-test\n\
+Terrain Generation| https://0-stamina.itch.io/terrain\n\
+Phantom Cafe| https://0-stamina.itch.io/phantom-cafe\n\
+BuddyUpJam Spring 2022| https://0-stamina.itch.io/untergetaucht\n\
 "
 
 
@@ -56,7 +56,7 @@ BuddyUpJam Spring 2022: https://0-stamina.itch.io/untergetaucht\n\
     links_cell.innerHTML = "<dl>";
     for(var i = 2; i < info.length; i++)
     {
-      var link_elems = info[i].split(":");
+      var link_elems = info[i].split("|");
       links_cell.innerHTML += "<dt><a href=\""+link_elems[1]+"\">"+link_elems[0]+"</a></dt>"
     }
     links_cell.innerHTML
@@ -66,7 +66,7 @@ BuddyUpJam Spring 2022: https://0-stamina.itch.io/untergetaucht\n\
 
   for(var d = 0; d < demos.length-1; d++)
   {
-    var info = demos[d].split(":");
+    var info = demos[d].split("|");
     var demo = document.createElement("LI");
 
     demo.innerHTML = "<a href=\""+info[1]+"\">"+info[0]+"</a>"

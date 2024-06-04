@@ -1,11 +1,17 @@
 *{
     font-family: courier;
     color:tomato;
-    background-color: black;
+    background-color:rgb(20, 20, 20);
 }
 html{ 
-    background-color: black;
+    background-color: rgb(20, 20, 20);;
 }
+
+h1,h2,h3,h4,h5,h6
+{
+    color:rgb(250, 129, 36);
+}
+
 table
 {
     border:1px outset grey;
