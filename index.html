@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="ready()">
+<h1>
+    Main Projects
+</h1>
+<table id="mainProjs">
+</table>
+<br/><br/><br/><br/>
+<h3>Side Projects & Demos</h3>
+<table id="sideProjs">
+  <td>
+  </td>
+</table>
+
+<script>
+function ready() {
+
+  var main_data = "\
+  Arsenal, Dec 2023, STEAM: https://store.steampowered.com/app/2697380/Arsenal/, ITCH.IO: https://0-stamina.itch.io/arsenal\n\
+  Burning Soul, TBD, \n\
+  "
+  var side_data = "\
+  Mesh Collision: https://0-stamina.itch.io/collision-test\n\
+  Terrain Generation: https://0-stamina.itch.io/terrain\n\
+  Phantom Cafe: https://0-stamina.itch.io/phantom-cafe\n\
+  BuddyUpJam Spring 2022: https://0-stamina.itch.io/untergetaucht\n\
+  "
+
+
+  var mainProjs = document.getElementById("mainProjs");
+  var games = main_data.split("\n");
+
+  var sideProjs = document.getElementById("sideProjs");
+  var demos = side_data.split("\n");
+  
+  for(var g = 0; g < games.length-1; g++)
+  {
+    var info = games[g].split(",");
+  
+    var entry = document.createElement("TR");
+    mainProjs.append(entry);
+
+    var name_cell = document.createElement("TD");
+    name_cell.innerHTML = "<b><a href=\""+info[0]+".html\">"+info[0]+"</a></b>";
+    entry.appendChild(name_cell);
+
+    var date_cell = document.createElement("TD");
+    date_cell.innerHTML = info[1];
+    entry.appendChild(date_cell);
+
+    var links_cell = document.createElement("TD");
+    links_cell.innerHTML = "<dl>";
+    for(var i = 2; i < info.length; i++)
+    {
+      var link_elems = info[i].split(":");
+      links_cell.innerHTML += "<dt><a href=\""+link_elems[1]+"\">"+link_elems[0]+"</a></dt>"
+    }
+    links_cell.innerHTML
+    entry.appendChild(links_cell);
+  }
+
+
+  for(var d = 0; d < demos.length-1; d++)
+  {
+    var info = demos[d].split(":");
+    var demo = document.createElement("LI");
+
+    demo.innerHTML = "<a href=\""+info[1]+"\">"+info[0]+"</a>"
+
+    sideProjs.children[0].firstChild.firstChild.appendChild(demo);
+  }
+
+}
+</script>
+
+
+</body>
+</html>

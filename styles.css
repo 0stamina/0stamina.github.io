@@ -1,0 +1,17 @@
+*{
+    font-family: courier;
+    color:tomato;
+    background-color:black;
+}
+
+table
+{
+    border:1px outset grey;
+}
+
+td
+{
+    border:1px inset grey;
+    padding: 10px;
+}
+
