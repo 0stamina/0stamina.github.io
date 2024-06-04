@@ -20,15 +20,15 @@
 function ready() {
 
   var main_data = "\
-  Arsenal, Dec 2023, STEAM: https://store.steampowered.com/app/2697380/Arsenal/, ITCH.IO: https://0-stamina.itch.io/arsenal\n\
-  Burning Soul, TBD, \n\
-  "
+Arsenal, Dec 2023, STEAM: https://store.steampowered.com/app/2697380/Arsenal/, ITCH.IO: https://0-stamina.itch.io/arsenal\n\
+Burning Soul, TBD, \n\
+"
   var side_data = "\
-  Mesh Collision: https://0-stamina.itch.io/collision-test\n\
-  Terrain Generation: https://0-stamina.itch.io/terrain\n\
-  Phantom Cafe: https://0-stamina.itch.io/phantom-cafe\n\
-  BuddyUpJam Spring 2022: https://0-stamina.itch.io/untergetaucht\n\
-  "
+Mesh Collision: https://0-stamina.itch.io/collision-test\n\
+Terrain Generation: https://0-stamina.itch.io/terrain\n\
+Phantom Cafe: https://0-stamina.itch.io/phantom-cafe\n\
+BuddyUpJam Spring 2022: https://0-stamina.itch.io/untergetaucht\n\
+"
 
 
   var mainProjs = document.getElementById("mainProjs");
@@ -45,7 +45,7 @@ function ready() {
     mainProjs.append(entry);
 
     var name_cell = document.createElement("TD");
-    name_cell.innerHTML = "<b><a href=\""+info[0]+"\">"+info[0]+"</a></b>";
+    name_cell.innerHTML = "<b><a href=\""+info[0].toLocaleLowerCase().replace(/\s/g,"_")+"\">"+info[0]+"</a></b>";
     entry.appendChild(name_cell);
 
     var date_cell = document.createElement("TD");
