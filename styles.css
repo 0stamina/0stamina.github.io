@@ -1,8 +1,23 @@
+
+
 *{
-    font-family: courier;
-    font-size:15pt;
+    font-family: terminal;
+    font-size:10pt;
     color:tomato;
-    background-color:rgb(20, 20, 20);
+}
+
+@font-face {
+    font-family: 'terminal';
+    src: url("PxPlus_HP_100LX_8x8.ttf");
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'terminal';
+    src: url("PxPlus_HP_100LX_10x11.ttf");
+    font-weight: normal;
+    font-style: normal;
 }
 
 body
@@ -11,13 +26,13 @@ body
 }
 
 html{ 
-    background-color: rgb(20, 20, 20);;
+    background-color: black;
 }
 
 h1
 {
-    font-size:25pt;
-    color:rgb(250, 129, 36);
+    font-size:20pt;
+    color:gold;
 }
 
 table
