@@ -8,14 +8,14 @@
 
 @font-face {
     font-family: 'terminal';
-    src: url("PxPlus_HP_100LX_8x8.ttf");
+    src: url("awcathodealt-webfont.ttf");
     font-weight: bold;
     font-style: bold;
 }
 
 @font-face {
     font-family: 'terminal';
-    src: url("PxPlus_HP_100LX_10x11.ttf");
+    src: url("awcathodealt-light-webfont.ttf");
     font-weight: normal;
     font-style: normal;
 }
