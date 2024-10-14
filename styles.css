@@ -1,6 +1,7 @@
 
 
 *{
+    cache-control: no-cache;
     font-family: terminal;
     font-size:17pt;
     color:tomato;
